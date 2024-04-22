@@ -17,7 +17,7 @@ const Messages = () => {
     //   </div>
     // </div>
 
-     <main className="flex w-full h-full shadow-lg rounded-3xl">
+    <>
       <section className="flex flex-col w-2/12 bg-white rounded-l-3xl">
         <div className="w-16 mx-auto mt-12 mb-20 p-4 bg-indigo-600 rounded-2xl text-white">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -233,7 +233,7 @@ const Messages = () => {
           </div>
         </section>
       </section>
-    </main>
+    </>
   )
 }
 

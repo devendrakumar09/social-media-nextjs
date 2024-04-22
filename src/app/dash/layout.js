@@ -1,8 +1,11 @@
+import Link from "next/link"
+
+ 
 
 function Layout({ children }) {
     return (
         <div className="flex bg-white">
-            <div className="md:flex w-2/6 md:w-1/4 h-screen bg-white border-r hidden">
+            <div className="md:flex w-2/6 md:w-1/4 h-screen bg-white border-r hidden  sticky top-0">
                 <div className="mx-auto py-10">
                     <h1 className="text-2xl font-bold mb-10 cursor-pointer text-[#EC5252] duration-150">Asason</h1>
                     <ul>
@@ -15,15 +18,18 @@ function Layout({ children }) {
                             <span className="font-semibold">Home</span>
                         </li>
                         <li className="flex space-x-2 mt-10 cursor-pointer hover:text-[#EC5252] duration-150">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                                <path
-                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-                            </svg>
-                            <span className="font-semibold">Posts</span>
+                           
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                    <path
+                                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                </svg>
+                                <Link href={'/dash/posts'}>
+                                <span className="font-semibold">Posts</span>
+                                </Link>
                         </li>
                         <li className="flex space-x-2 mt-10 cursor-pointer hover:text-[#EC5252] duration-150">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -31,7 +37,9 @@ function Layout({ children }) {
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
+                            <Link href={'/dash/collections'}>
                             <span className="font-semibold">Collections</span>
+                            </Link>
                         </li>
                         
                         <li className="flex space-x-2 mt-10 cursor-pointer hover:text-[#EC5252] duration-150">
@@ -55,15 +63,16 @@ function Layout({ children }) {
                 </div>
             </div>
             <main className="min-h-screen w-full bg-white border-l">
-                <nav className="flex items-center justify-between px-10 bg-white py-4 border-b">
+                <nav className="flex items-center justify-between px-10 bg-white py-4 border-b ">
                     <div className=" font-extrabold">
                         <h4>Project Title</h4>                         
                     </div>
                     <div className="flex items-center space-x-4 me-12">
+                        {/* <Link  href={'/dash/wallet'} className=" bg-slate-500 px-10 py-2 rounded-xl text-white font-extrabold">55</Link> */}
                         <img className="w-8 rounded-full" src="https://imagez.tmz.com/image/f7/1by1/2021/12/14/f7703994b69d48ca802df55729a2325c_xl.jpg" alt="Elon Musk" />                        
                     </div>
                 </nav>
-               <div className="p-10">
+               <div className="p-10 pt-0">
                 {children}
                </div>
             </main>
