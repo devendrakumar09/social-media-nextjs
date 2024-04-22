@@ -2,19 +2,53 @@ import React from 'react'
 
 const ProfileUI = () => {
   return (
-  <div className="container w-80 mx-auto  bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:scale-105 duration-500">
-    <img className="w-full" src="https://i.imgur.com/iObhoAx.png" alt="" />
-    <div className="text-center relative py-14">
-      <span className="absolute transform -top-10 left-28 flex z-50 text-green-500 bg-white rounded-full hover:text-green-400 transition-all duration-200 cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-20 w-20" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-        </svg>
-      </span>
-      <h1 className="mb-1 text-2xl font-sans font-semibold text-gray-700 hover:text-gray-900 cursor-pointer">Meditaciones en casa</h1>
-      <span className="text-lg text-gray-700 hover:text-gray-900">Susan Paz</span>
-    </div>
-  </div>
+    <>
+      <div className=" break-words bg-white  mb-6 shadow-lg rounded-xl mt-16 ">
+        <div className="px-6">
+          <div className="flex flex-wrap justify-center">
+            <div className="w-full flex justify-center">
+              <div className="relative">
+                <img src="https://github.com/creativetimofficial/soft-ui-dashboard-tailwind/blob/main/build/assets/img/team-2.jpg?raw=true" className="shadow-xl rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px]" />
+              </div>
+            </div>
+            <div className="w-full text-center mt-20">
+              <div className="flex justify-center lg:pt-4 pt-8 pb-0">
+                <div className="p-3 text-center">
+                  <span className="text-xl font-bold block uppercase tracking-wide text-slate-700">3,360</span>
+                  <span className="text-sm text-slate-400">Photos</span>
+                </div>
+                <div className="p-3 text-center">
+                  <span className="text-xl font-bold block uppercase tracking-wide text-slate-700">2,454</span>
+                  <span className="text-sm text-slate-400">Followers</span>
+                </div>
 
+                <div className="p-3 text-center">
+                  <span className="text-xl font-bold block uppercase tracking-wide text-slate-700">564</span>
+                  <span className="text-sm text-slate-400">Following</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-2">
+            <h3 className="text-2xl text-slate-700 font-bold leading-normal mb-1">Mike Thompson</h3>
+            <div className="text-xs mt-0 mb-2 text-slate-400 font-bold uppercase">
+              <i className="fas fa-map-marker-alt mr-2 text-slate-400 opacity-75"></i>Paris, France
+            </div>
+          </div>
+          <div className="mt-6 py-6 border-t border-slate-200 text-center">
+            <div className="flex flex-wrap justify-center">
+              <div className="w-full px-4">
+                <p className="font-light leading-relaxed text-slate-600 mb-4">An artist of considerable range, Mike is the name taken by Melbourne-raised, Brooklyn-based Nick Murphy writes, performs and records all of his own music, giving it a warm.</p>
+                <a href="javascript:;" className="font-normal text-slate-700 hover:text-slate-400">Follow Account</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </>
   )
 }
 

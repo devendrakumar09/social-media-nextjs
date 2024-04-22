@@ -14,7 +14,9 @@ export default function Home() {
           <StoryBarUI />
         </div>
         <div className="col-span-12 sm:col-span-6">
-          <PostUI2 />
+          <div className="p-5">
+            <PostUI2 />
+          </div>
         </div>
         <div className="col-span-12 sm:col-span-6">
           <div className="my-5">
@@ -22,7 +24,7 @@ export default function Home() {
           </div>
           <QuickProfile />
           <QuickProfile />
-          
+
         </div>
         <div className="col-span-12">
           <div className="px-4">
@@ -39,10 +41,14 @@ export default function Home() {
         </div>
 
         <div className="col-span-12 sm:col-span-6">
-          <PostUI2 />
+          <div className="p-5">
+            <PostUI2 />
+          </div>
         </div>
         <div className="col-span-12 sm:col-span-6">
-        <PostUI2 />
+          <div className="p-5">
+            <PostUI2 />
+          </div>
         </div>
       </div>
 
