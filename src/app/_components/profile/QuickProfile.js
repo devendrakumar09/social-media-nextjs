@@ -1,9 +1,10 @@
+import Link from 'next/link'
 import React from 'react'
 
 const QuickProfile = () => {
   return (
 
-
+    <Link href={'/a/sajdkasd'}>
     <div className=" ">
       <div className="border rounded-md mb-2">
         <div className=" rounded-lg bg-white p-6">
@@ -36,6 +37,7 @@ const QuickProfile = () => {
 
       </div>
     </div>
+    </Link>
 
   )
 }

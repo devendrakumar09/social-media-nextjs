@@ -13,7 +13,11 @@ const PostUI2 = () => {
                             <img className="w-12 h-12 object-cover rounded-full shadow cursor-pointer" alt="User avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80" />
                         </div>
                         <div className="flex flex-col mb-2 ml-4 mt-1">
-                            <div className="text-gray-600 text-sm font-semibold">John Doe</div>
+                            <div className="text-gray-600 text-sm font-semibold">
+                                <Link href={'/a/sajdkasd'}>
+                                John Doe
+                                </Link>
+                            </div>
                             <div className="flex w-full mt-1">
                                 <div className="text-blue-700 font-base text-xs mr-1 cursor-pointer">
                                     SEO
@@ -30,10 +34,12 @@ const PostUI2 = () => {
                     </svg>
                 </div> */}
                 </div>
+                <Link href={'/p/asdasokd'}>
                 <img src="https://images.unsplash.com/photo-1527112862739-c3b9466d902e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=966&q=80" alt="" />
                 <div className="p-6">
                     <p className="text-sm  font font-thin">Lorem ipsum carrots, enhanced undergraduate developer, but they do occaecat time and vitality, Lorem ipsum carrots,</p>
                 </div>
+                </Link>
             </div>
 
         </div>

@@ -14,7 +14,7 @@ export default function Home() {
           <StoryBarUI />
         </div>
         <div className="col-span-12 sm:col-span-6">
-          <div className="p-5">
+          <div className=" ">
             <PostUI2 />
           </div>
         </div>
@@ -41,12 +41,12 @@ export default function Home() {
         </div>
 
         <div className="col-span-12 sm:col-span-6">
-          <div className="p-5">
+          <div className=" ">
             <PostUI2 />
           </div>
         </div>
         <div className="col-span-12 sm:col-span-6">
-          <div className="p-5">
+          <div className=" ">
             <PostUI2 />
           </div>
         </div>

@@ -4,17 +4,17 @@ const CommentUI = () => {
     return (
         <>
            
-            <div className="flex bg-white shadow-lg rounded-lg "> 
-                <div className="flex items-start px-4 py-6">
+            <div className="flex"> 
+                <div className="flex items-start px-4 py-6 border  bg-white shadow-lg rounded-lg w-full">
                     <img className="w-12 h-12 rounded-full object-cover mr-4 shadow" src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar" />
                         <div className="">
-                            <div className="flex items-center justify-between">
+                            <div className="flex ">
                                 <h2 className="text-lg font-semibold text-gray-900 -mt-1">Brad Adams </h2>
-                                <small className="text-sm text-gray-700">Follow</small>
+                                <small className="text-sm  ms-3 text-blue-600">Follow</small>
                             </div>
                             <small className="text-sm text-gray-700">22h ago</small>
                             <p className="mt-3 text-gray-700 text-sm">
-                                Lorem ipsum, dolor sit amet conse. Saepe optio minus rem dolor sit amet!
+                            Lorem ipsum, dolor sit amet conse. Saepe optio minus rem dolor sit amet! Lorem ipsum, dolor sit amet conse. Saepe optio minus rem dolor sit amet! Lorem ipsum, dolor sit amet conse. Saepe optio minus rem dolor sit amet! Lorem ipsum, dolor sit amet conse. Saepe optio minus rem dolor sit amet! Lorem ipsum, dolor sit amet conse. Saepe optio minus rem dolor sit amet! Lorem ipsum, dolor sit amet conse. Saepe optio minus rem dolor sit amet!
                             </p>
                             {/* <div className="mt-4 flex items-center">
                                 <div className="flex mr-2 text-gray-700 text-sm mr-3">

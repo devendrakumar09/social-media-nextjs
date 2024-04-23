@@ -2,7 +2,7 @@ import React from 'react'
 
 const PaidPostUI = () => {
     return (
-        <div className="bg-white shadow rounded-lg mb-6 mt-4">
+        <div className="bg-white shadow rounded-lg mb-6 mt-4 overflow-hidden">
             <div className="flex flex-row px-2 py-3 mx-3">
                 <div className="w-auto h-auto rounded-full">
                     <img className="w-12 h-12 object-cover rounded-full shadow cursor-pointer" alt="User avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80" />
@@ -85,7 +85,7 @@ const PaidPostUI = () => {
 
                     </button>
                 </span>
-                <input type="search" className="w-full py-2 pl-4 pr-10 text-sm bg-gray-100 border border-transparent appearance-none rounded-tg placeholder-gray-400 focus:bg-white focus:outline-none focus:border-blue-500 focus:text-gray-900 focus:shadow-outline-blue" placeholder="Post a comment..." autocomplete="off" />
+                <input type="search" className=" py-2 pl-4 pr-10 text-sm bg-gray-100 border border-transparent appearance-none rounded-tg placeholder-gray-400 focus:bg-white focus:outline-none focus:border-blue-500 focus:text-gray-900 focus:shadow-outline-blue" placeholder="Post a comment..." autocomplete="off" />
             </div>
         </div>
     )
